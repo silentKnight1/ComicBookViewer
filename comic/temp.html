@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+	<head>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="carousel.css">
+	<meta charset="UTF-8"/>
+	</head>
+	<body >
+		
+	<div class="nav_bar">
+		<div class="nav_element">
+			option 1
+		</div>
+		<div class="nav_element ">
+			option 2 <span style="font-size:12px;">&#x25bc </span>
+			<ul class="dropdown-list">
+					<li> item 1</li>
+					<li> item 2</li>
+					<li> item 3</li>
+					<li> <a href="#">item 4</a></li>
+			</ul>
+		</div>
+		<div class="nav_element ">
+			option 3 <span style="font-size:12px;">&#x25bc </span>
+			<ul class="dropdown-list">
+					<li> item 1</li>
+					<li> item 2</li>
+					<li> item 3</li>
+					<li> <a href="#">item 4</a></li>
+			</ul>
+		</div>
+		<div class="nav_element float_right">
+			option 4 <span style="font-size:12px;">&#x25bc </span>
+			<ul class="dropdown-list drop-on-left" >
+					<li> item 1</li>
+					<li> item 2</li>
+					<li> item 3</li>
+					<li> <a href="#">item 4</a></li>
+			</ul>
+		</div>
+		
+	</div>
+	
+	
+	<div id='carousel_container'>  
+  <div class="buttonSet"><div id='left_scroll'><a href='javascript:slide("left");'>LEFT</a></div>  </div>
+    <div id='carousel_inner'>  
+        <ul id='carousel_ul'>  
+            <li><a href='#'><img src='imgs/00.jpg' /></a></li>  
+            <li><a href='#'><img src='imgs/00a.jpg' /></a></li>  
+            <li><a href='#'><img src='imgs/01.jpg' /></a></li>  
+            <li><a href='#'><img src='imgs/02.jpg' /></a></li>  
+            <li><a href='#'><img src='imgs/03.jpg' /></a></li> 
+  
+        </ul>  
+    </div>  
+  <div id='right_scroll'><a href='javascript:slide("right");'>RIGHT</a></div>  
+  <input type='hidden' id='hidden_auto_slide_seconds' value=0 />  
+</div> 
+	
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="buttons.js"></script>
+	<script type="text/javascript" src="carousel.js"></script>
+	</body>
+</html>

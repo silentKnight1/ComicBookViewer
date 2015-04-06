@@ -1,0 +1,78 @@
+#carousel_container{
+position:relative;
+left:100px;
+
+top:50px;
+z-index:-1;
+width:750px;
+
+
+}
+
+
+#carousel_inner {  
+float:left; /* important for inline positioning */  
+width:500px; /* important (this width = width of list item(including margin) * items shown */  
+overflow: hidden;  /* important (hide the items outside the div) */  
+/* non-important styling bellow */  
+background: #F0F0F0;  
+height:700px;
+border: 3px solid black;
+border-radius:10px;
+
+}  
+  
+#carousel_ul {  
+position:relative;  
+left:-500px; /* important (this should be negative number of list items width(including margin) */  
+list-style-type: none; /* removing the default styling for unordered list items */  
+margin: 0px;  
+padding: 0px;  
+width:9999px; /* important */  
+/* non-important styling bellow */  
+padding-bottom:10px;  
+
+}  
+
+#carousel_ul li{  
+float: left; /* important for inline positioning of the list items */  
+width:500px;  /* fixed width, important */  
+/* just styling bellow*/  
+padding:0px;  
+height:500px;  
+background: #000000;  
+margin-top:0px;  
+margin-bottom:0px;  
+margin-left:0px;  
+margin-right:0px;  
+}  
+  
+#carousel_ul li img {  
+.margin-bottom:-4px; /* IE is making a 4px gap bellow an image inside of an anchor (<a href...>) so this is to fix that */  
+/* styling */  
+cursor:pointer; 
+width:500px; 
+cursor: hand;  
+border:0px;  
+}  
+#left_scroll, #right_scroll{  
+float:left;  
+height:50px;  
+position:relative;
+top:300px;
+width:50px;  
+ 
+cursor: pointer; 
+}  
+
+#left_scroll img, #right_scroll img{  
+border:2; /* remove the default border of linked image */  
+/*styling*/  
+height:50px;
+width:50px;
+cursor: pointer;  
+cursor: hand;  
+text-decoration:none;
+color:white;
+  
+}  
